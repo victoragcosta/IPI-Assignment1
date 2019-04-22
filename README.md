@@ -52,9 +52,9 @@ caminho.
 `pip3 install <nome da biblioteca>`
 
 Nome          | Versão
---------------|----------
-numpy         | 1.16.2
-opencv-python | 4.0.0.21
+--------------|-------------
+numpy         | >= 1.16.2
+opencv-python | >= 4.0.0.21
 
 
 ## Modo de uso
