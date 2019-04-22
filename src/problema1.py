@@ -18,7 +18,7 @@ def histograma(img):
   return niveis
 
 # Questão 1
-def imscaledepth(img, n_bits, scale):
+def im_chscaledepth(img, n_bits, scale):
 
   # Crio uma cópia para poder modificar sem alterar a original
   newimg1 = img.copy()
@@ -84,11 +84,11 @@ def imscaledepth(img, n_bits, scale):
 img = cv2.imread("img/im1.jpg")
 cv2.imshow("Original", img)
 
-img_tratado = imscaledepth(img, 5, 0.5)
+img_tratado = im_chscaledepth(img, 5, 0.5)
 cv2.imshow("Colorida n_bits=5 scale=0.5", img_tratado)
 #cv2.imwrite("img/resultado/im1_color_5bits_0.5.jpg", img_tratado)
 
-img_tratado2 = imscaledepth(img, 3, 1.75)
+img_tratado2 = im_chscaledepth(img, 3, 1.75)
 cv2.imshow("Colorida n_bits=3 scale=1.75", img_tratado2)
 #cv2.imwrite("img/resultado/im1_color_3bits_1.75.jpg", img_tratado2)
 
@@ -99,11 +99,11 @@ gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 cv2.imshow("Escala de Cinza", gray)
 #cv2.imwrite("img/im1_cinza.jpg", gray)
 
-gray_tratado = imscaledepth(gray, 5, 0.5)
+gray_tratado = im_chscaledepth(gray, 5, 0.5)
 cv2.imshow("Cinza n_bits=5 scale=0.5", gray_tratado)
 #cv2.imwrite("img/resultado/im1_cinza_5bits_0.5.jpg", gray_tratado)
 
-gray_tratado2 = imscaledepth(gray, 3, 1.75)
+gray_tratado2 = im_chscaledepth(gray, 3, 1.75)
 cv2.imshow("Cinza n_bits=3 scale=1.75", gray_tratado2)
 #cv2.imwrite("img/resultado/im1_cinza_3bits_1.75.jpg", gray_tratado2)
 
